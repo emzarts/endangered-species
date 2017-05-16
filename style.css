@@ -1,0 +1,259 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+    	padding: 0;
+    	font-family: 'Sanchez', serif;
+}
+
+body, html {
+    	width: 100%;
+    	height: 100%; 
+    	background-color: #415e45;
+	color: white;
+}
+
+h1 {
+	color: white;
+    	font-weight: normal;
+    	text-align: center;
+}
+
+a, p {
+    	color: white;
+    	text-decoration: none;
+}
+
+.container {
+	width: 95%; 
+	margin: 0 auto;
+	color: white;
+	padding: 40px;
+	max-width: 900px;
+    font-size: 1.2em;
+}
+
+.header {
+	background-color: #415e45;
+	color: white;
+    	font-size: 2em;
+	padding: 20px;
+}
+
+.click {
+    	position: fixed; 
+    	z-index: 2;
+    	right: 0;
+	    top: 0;
+    	color: white;
+    	border: 1px solid transparent;
+   	padding: 22px;
+   	margin: 15px;
+	background-color: #415e45;
+}
+
+#menu {
+	position: fixed;
+	right: 0;
+	height: 100%;
+	width: 0px;
+	background-color: #415e45;
+	transition: width 1s;
+	z-index: 1;
+}
+
+.click:after {
+	font-family: FontAwesome;
+	content: "\f0c9";
+	color: white;
+	position: absolute;
+	font-size: 2.5em;
+	top: 4px;
+	right: 8px;
+}
+
+#menu .select {
+    	display: block;
+    	margin: 15px;
+    	font-size: 1.4em;
+    	padding: 10px;
+   	border: 1px solid white;
+}
+
+#selectors {
+    	display: none;
+}
+
+.parallax {
+	display: flex;
+	justify-content: center;
+    	align-items: center;
+    	height: 100%;
+    	background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+}
+
+.parallax p {
+	background-color: rgba(65, 94, 69, 1);
+	color: white;
+    	padding: 20px 30px 20px 30px;
+   	margin: 50px;
+   	font-size: 1.8em;
+   	font-family: 'Sanchez', serif;
+}
+
+.button {
+    	font-size: 1.5em;
+   	color: white;
+    	border: 1px solid white;
+   	padding: 10px;
+   	width: 160px;
+   	margin: 0 auto;
+   	text-align: center;
+}
+
+td a:hover, .container a:hover {
+	text-decoration: underline;
+}
+table {
+    	margin: 0 auto;  
+   	color: white;
+    	border: 1px solid white;
+    	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+ 	border: 1px solid white; 
+ 	padding: 10px;
+}
+
+th {
+    	text-align: left;
+    	font-size: 1.4em;
+}
+.text {
+    	color: white;
+    	padding: 20px;
+    	font-size: 1.2em;
+}
+
+.img1 {
+    	background-image: url("http://animal-dream.com/data_images/elephant/elephant1.jpg"); 
+}
+
+.img2 {
+    	background-image: url("http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/A-G/giant-panda-closeup.jpg");
+}
+
+.img3 {
+    	background-image: url("http://www.polarbearendangered.com/wp-content/uploads/2013/12/polar-bear-2.jpg");
+}
+
+.photo-display {
+        width: 100%;
+}
+
+.photo-display img {
+    	width: 100%;
+    	height: auto;
+}
+
+
+/* Form CSS */
+
+form {
+	padding: 5px;
+	border: 1px solid white;
+	color: white;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #415e45;
+}
+
+form h1 {
+	text-align: center;
+}
+
+input {
+	background-color: transparent;
+	font-size: 1.2em;
+	padding: 10px;
+	border: 1px solid white;
+	margin-top: 10px;
+	width: 49.4%;
+	display: inline-block;
+	color: white;
+}
+
+@media screen and (max-width: 700px) {
+	input {
+		width: 100%;
+	}
+	form select {
+		width: 100%;
+	}
+}
+.bar {
+	width: 100%;
+	padding: 10px;
+	background-color: white;
+	text-align: left;
+	color: #415e45;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.bar p {
+	color: #415e45;
+}
+.pay {
+    	width: 100px;
+}
+.donate-btn {
+	padding: 10px;
+	background-color: #415e45;
+	border: 1px solid white; 
+	color: white;
+	margin-top: 10px;
+	font-size: 1em;
+    border-radius: 4px;
+}
+
+.donate-btn:hover {
+	color: #415e45;
+	background-color: white; 
+}
+
+.donate-btn:active {
+	color: #415e45;
+	background-color: white; 
+}
+.donate-buttons {
+	display: flex; 
+	justify-content: space-around;
+}
+
+select {
+	width: 49.6%;
+	background-color: transparent;
+	font-size: 1.2em;
+	padding: 9px;
+	border: 1px solid white;
+	color: #a5a5a5;
+	margin-top: 10px;
+}
+
+option {
+	color: black;
+	font-size: .9em;
+}
+
+img {
+	width: 100%;
+}
+
+ol {
+	margin-left: 20px;
+}
